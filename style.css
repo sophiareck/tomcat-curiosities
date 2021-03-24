@@ -6,6 +6,10 @@
   font-family: raleway-bold;
   src: url(Raleway/Raleway-SemiBold.woff);
 }
+@font-face {
+  font-family: raleway-italic;
+  src: url(Raleway/Raleway-SemiBold.woff);
+}
 p{
   font-size: 1.5vw;
   margin: 0;
@@ -43,6 +47,10 @@ h2{
 h3{
   font-size: 2vw;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 #mainContainer{
 width: 100vw;
 height: 100vh;
@@ -50,7 +58,7 @@ display: flex;
 flex-direction: column;
 padding-top: 0px;
 margin-top: 0px;
-margin-bottom: 0px;
+padding-bottom: 2vw;
 align-items: center;
 }
 #menu{
@@ -93,7 +101,7 @@ align-items: center;
 #intro{
   display: flex;
   flex-direction: row;
-  width:95%;
+  width: 95%;
   margin-top: 1vw;
   align-items: center;
   justify-content: space-between;
@@ -101,14 +109,35 @@ align-items: center;
 #introText{
   width:40%;
   display:flex;
-  margin: 1vw;
+  padding: 1vw;
+  border-right-style: solid;
 }
 #introDef{
   width:60%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-bottom-style: solid;
   padding-bottom: 2vw;
+  padding: 1vw;
   margin: 1vw;
+}
+
+#image{
+  width: 95%;
+  height: 30vw;
+  margin: 2vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#foxskull{
+  display: flex;
+  width: 20vw;
+  height: 20vw;
+
+}
+#imageDes{
+  display: flex;
+  width: 60%;
 }
