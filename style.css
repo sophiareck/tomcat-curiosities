@@ -28,7 +28,7 @@ a{
   text-decoration: none;
   font-size: 1.75vw;
 }
-a:not(.portfolio):not(.current):hover{
+a:not(.portfolio):not(.current):not(.title):hover{
   font-family: raleway-bold;
   color: #5C1113;
   text-decoration: none;
@@ -69,6 +69,15 @@ h4{
 img{
   max-width: 100%;
   height: auto;
+}
+.noMargin{
+  margin:0;
+  padding: .75vw;
+  text-align: center;
+}
+.title{
+  font-size: 3vw;
+  color: #5C1113;
 }
 #mainContainer{
 width: 100%;
@@ -111,11 +120,11 @@ align-items: center;
 
 /* homepage */
 #headline{
-  width:95%;
+  width:100%;
   display: flex;
+  flex-direction: column;
   margin-top: 8vw;
   align-items: center;
-  justify-content: center;
   padding: 2vw;
   background-color: #5C1113;
 }
@@ -134,6 +143,7 @@ align-items: center;
   padding: 1vw;
   padding-left: 2vw;
   border-right-style: solid;
+  text-align: justify;
 }
 #introDef{
   width:50%;
@@ -166,6 +176,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
   width: 55%;
+    text-align: justify;
 }
 
 /* about page */
@@ -185,6 +196,7 @@ align-items: center;
   align-items: center;
   padding-bottom: 3vw;
   border-bottom: solid;
+    text-align: justify;
 }
 #sophiaPhotos{
   display: flex;
@@ -213,6 +225,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+    text-align: justify;
 }
 #processPics{
 padding-top: 2vw;
@@ -241,3 +254,103 @@ padding-bottom: 2vw;
     align-items: center;
     flex-direction: column;
   }
+
+/* earrings and necklaces */
+
+#jewleryGrid{
+  margin-top: 3vw;
+  width: 85%;
+  height: 91vw;
+  display: grid;
+  align-self: center;
+  justify-content: space-around;
+  gap: 3vw 3vw;
+  grid-template-columns: 33vw 33vw;
+  grid-template-rows: 43vw 43vw;
+}
+#hipbone{
+  padding: 1vw;
+  border-style: solid;
+  display: inline-grid;
+  text-align: center;
+}
+#molar{
+  padding: 1vw;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+}
+#vertebrae{
+  padding: 1vw;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+}
+#squirrel{
+  padding: 1vw;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+}
+#earringPhoto{
+  display: grid;
+  width: 72%;
+  align-self: center;
+  justify-content: center;
+  padding: .5vw;
+  padding-left: 4.5vw;
+  padding-top: .5vw;
+}
+.small{
+  font-size: 1.25vw;
+}
+
+/* necklaces */
+
+
+#atlas{
+  padding: 1vw;
+  border-style: solid;
+  display: inline-grid;
+  text-align: center;
+}
+#baculum{
+  padding: 1vw;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+}
+#jawbone{
+  padding: 1vw;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+}
+#rabbit{
+  padding: 1vw;
+  display: grid;
+  text-align: center;
+  border-style: solid;
+}
+
+#necklacePhoto{
+  display: grid;
+  width: 85%;
+  align-self: center;
+  justify-content: center;
+  padding: .5vw;
+  padding-left: 2vw;
+  padding-top: .5vw;
+}
+
+#jewleryGrid2{
+  margin-top: 3vw;
+  width: 80%;
+  height: 87vw;
+  display: grid;
+  align-self: center;
+  justify-content: space-around;
+  gap:3vw 3vw;
+  grid-template-columns: 29vw 29vw;
+  grid-template-rows: 41vw 41vw;
+}
